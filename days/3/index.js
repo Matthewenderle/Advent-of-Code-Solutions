@@ -3,12 +3,8 @@ import { getDataFile } from "../../utils/file.js"
 const devMode = process.argv.includes('-dev')
 const data = getDataFile(3, devMode)
 
-//              0    1    2    3    4    5    6    7    8    9    10   11   12   13   14   15   16   17   18   19   20   21   22   23   24   25   26   27
-const chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F',
-  'G', 'H', 'I', 'J', 'K', 'L',
-  'M', 'N', 'O', 'P', 'Q',
-  'R', 'S', 'T', 'U', 'V', 'W',
-  'X', 'Y', 'Z']
+//              0    1    2    3    4    5    6    7    8    9    10   11   12   13   14   15   16   17   18   19   20   21   22   23   24   25
+const chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 const getMatchingCharIndex = (array) => {
   const len = array.length
@@ -18,12 +14,12 @@ const getMatchingCharIndex = (array) => {
     if (array[1].includes(x)) {
       if (len == 2) {
         index[0] = x
-        index[1] = Number(chars.indexOf(x))
+        index[1] = Number(chars.includes(x) ? chars.indexOf(x) : chars.indexOf(x.toLowerCase()) + 26)
       } else {
         do {
           if (array[i].includes(x)) {
             index[0] = x
-            index[1] = Number(chars.indexOf(x))
+            index[1] = Number(chars.includes(x) ? chars.indexOf(x) : chars.indexOf(x.toLowerCase()) + 26)
           }
           i += 1
         } while (i <= len - 1)
