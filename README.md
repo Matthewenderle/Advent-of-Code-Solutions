@@ -11,6 +11,7 @@ My solutions will be completed in Javascript as much as I can. Due to my career 
 | :---:|----------|--------| :---:|----------|--------| :---:|
 |  Day |Time    |Rank  |Score       |Time    |Rank  |Score|
 |  1   | 20:46:29 | 122810 |  0  | 20:58:12 | 118047 |  0  |
+|  2   | 21:01:42 | 117504 |  0  | 21:24:58 | 111634 |  0  |
 
 
 ## Setup & Execution
