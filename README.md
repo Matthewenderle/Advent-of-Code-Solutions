@@ -1,12 +1,12 @@
-# Advent of Code 2022
+# Advent of Code Solutions
 
-This repo contains my solutions to the 2022 season's for the Advent of Code Challenge. I'm posting these publicly to show my progression in completeing a challenge like this. 
+This repo contains my solutions to Advent of Code Challenge. I'm posting these publicly to show my progression in completeing a challenge like this. I first started with this challenge in 2022 and decided that I will also complete the others as time permits.
 
 ![Cover](./cover.png)
 
 My solutions will be completed in Javascript as much as I can. Due to my career and hobbies I'm not competing for best score or time, just completion and consistancy.
 
-## My Leaderboard
+## My Leaderboard (2022)
 |      |  Part 1  |        |     |  Part 2  |        |     |
 | :---:|----------|--------|:---:|----------|--------|:---:|
 |  Day |   Time   |  Rank  |Score|   Time   |  Rank  |Score|
@@ -25,10 +25,10 @@ Each day I login to the [Advent of Code](https://adventofcode.com) and get the i
 ```bash
 # Node.js v18.12.1
 npm install
-node ./days/<day number>
+node ./<year>/day-<day number>
 
 # Development mode (Requires Nodemon v2.0.20)
-nodemon ./days/<day number>
+nodemon ./<year>/day-<day number>
 ```
 
 ## Development Mode
@@ -37,5 +37,5 @@ I initially develop the code to solve the example problem and then build it out 
 
 ```bash
 # Development mode (Requires Nodemon v2.0.20)
-nodemon ./days/<day number> -dev
+nodemon ./<year>/day-<day number> -dev
 ```

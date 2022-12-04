@@ -2,7 +2,7 @@
 import { getDataFile } from "../../utils/file.js"
 const devMode = process.argv.includes('-dev')
 let t = devMode ? process.hrtime() : null;
-const data = getDataFile(1, devMode)
+const data = getDataFile(2022, 1, devMode)
 
 let elfs = []
 let calorieSum = 0

@@ -8,10 +8,11 @@ export function syncReadFile(filename) {
 
 /**
  *
+ * @param {number} [year=2022]
  * @param {number} date
  * @param {boolean} [dev=false]
  * @return {string} 
  */
-export function getDataFile(date, dev = false) {
-    return syncReadFile(dev ? `./days/${date}/input-dev.txt` : `./days/${date}/input.txt`)
+export function getDataFile(year = 2022, date, dev = false) {
+    return syncReadFile(dev ? `./${year}/day-${date}/input-dev.txt` : `./${year}/day-${date}/input.txt`)
 }
