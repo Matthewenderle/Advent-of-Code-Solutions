@@ -1,6 +1,7 @@
 // https://adventofcode.com/2022/day/3
 import { getDataFile } from "../../utils/file.js"
 const devMode = process.argv.includes('-dev')
+let t = devMode ? process.hrtime() : null;
 const data = getDataFile(3, devMode)
 
 //              0    1    2    3    4    5    6    7    8    9    10   11   12   13   14   15   16   17   18   19   20   21   22   23   24   25
@@ -41,7 +42,6 @@ const part1 = () => {
     const match = getMatchingCharIndex(parts)
     prioritySum += match[1] + 1
   })
-  console.log(`Part 1: The sum of the priority items is: ${prioritySum}`)
   return prioritySum
 }
 
@@ -71,7 +71,6 @@ const part2 = () => {
     const match = getMatchingCharIndex(elfs)
     prioritySum += match[1] + 1
   })
-  console.log(`Part 2: The sum of the priority items per group is: ${prioritySum}`)
   return prioritySum
 }
 
@@ -82,4 +81,9 @@ const part2Result = part2()
 if (devMode) {
   console.log(part1Result !== 157 ? `❌ Part 1: ${part1Result} != 157` : `✅ Part 1: is correct 🌟`)
   console.log(part2Result !== 70 ? `❌ Part 2: ${part2Result} != 70` : `✅ Part 2: is correct 🌟`)
+  t = process.hrtime(t)
+  console.log('benchmark took %d seconds and %d nanoseconds', t[0], t[1]);
+} else {
+  console.log(`Part 1: The sum of the priority items is: ${part1Result}`)
+  console.log(`Part 2: The sum of the priority items per group is: ${part2Result}`)
 }

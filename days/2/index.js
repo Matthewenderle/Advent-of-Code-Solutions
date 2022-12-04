@@ -1,6 +1,7 @@
 // https://adventofcode.com/2022/day/2
 import { getDataFile } from "../../utils/file.js"
 const devMode = process.argv.includes('-dev')
+let t = devMode ? process.hrtime() : null;
 const data = getDataFile(2, devMode)
 
 const dataArray = []
@@ -59,10 +60,13 @@ part2.forEach((x) => {
   part2ScoreSum += Number(x.score)
 })
 
-console.log(`Part 1: Your score for 🪨 📃✂️  is: ${part1ScoreSum}`)
-console.log(`Part 2: Your score for 🪨 📃✂️  is: ${part2ScoreSum}`)
 
 if (devMode) {
   console.log(part1ScoreSum !== 15 ? `❌ Part 1: ${part1ScoreSum} != 15` : `✅ Part 1: is correct 🌟`)
   console.log(part2ScoreSum !== 12 ? `❌ Part 2: ${part2ScoreSum} != 12` : `✅ Part 2: is correct 🌟`)
+  t = process.hrtime(t)
+  console.log('benchmark took %d seconds and %d nanoseconds', t[0], t[1]);
+} else {
+  console.log(`Part 1: Your score for 🪨 📃✂️  is: ${part1ScoreSum}`)
+  console.log(`Part 2: Your score for 🪨 📃✂️  is: ${part2ScoreSum}`)
 }
