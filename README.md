@@ -15,6 +15,7 @@ My solutions will be completed in Javascript as much as I can. Due to my career 
 |  3   | 09:25:32 |  61985 |  0  | 10:18:14 |  59323 |  0  |
 |  4   | 09:44:47 |  65676 |  0  | 10:07:45 |  64958 |  0  |
 |  5   | 01:18:57 |  13922 |  0  | 01:25:25 |  13251 |  0  |
+|  6   | 00:11:57 |   7480 |  0  | 00:15:30 |   7646 |  0  |
 
 
 ## Setup & Execution
