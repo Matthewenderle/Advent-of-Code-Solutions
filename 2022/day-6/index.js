@@ -8,8 +8,8 @@ const part1 = () => {
   let result = 0
   const packetSize = 4
   input.forEach((x,i) => {
-    const arr = input.slice(i, (i+1) * packetSize)
-    const set = new Set(arr).size !== arr.length
+    const [a, b, c, d] = input.slice(i, (i+1) * packetSize)
+    const set = new Set([a, b, c, d]).size !== [a, b, c, d].length
     if (!set && result === 0)
       result = i + packetSize
 })
@@ -20,8 +20,8 @@ const part2 = () => {
   let result = 0
   const packetSize = 14
   input.forEach((x,index) => {
-    const arr = input.slice(index, (index+1) * packetSize)
-    const set = new Set(arr).size !== arr.length
+    const [a, b, c, d,e,f,g,h,i,j,k,l,m,n] = input.slice(index, (index+1) * packetSize)
+    const set = new Set([a, b, c, d,e,f,g,h,i,j,k,l,m,n]).size !== [a, b, c, d,e,f,g,h,i,j,k,l,m,n].length
     if (!set && result === 0)
       result = index + packetSize
 })
