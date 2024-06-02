@@ -6,6 +6,13 @@ This repo contains my solutions to Advent of Code Challenge. I'm posting these p
 
 My solutions will be completed in Javascript as much as I can. Due to my career and hobbies I'm not competing for best score or time, just completion and consistancy.
 
+## My Leaderboard (2023)
+|      |  Part 1  |        |     |  Part 2  |        |     |
+| :---:|----------|--------|:---:|----------|--------|:---:|
+|  Day |   Time   |  Rank  |Score|   Time   |  Rank  |Score|
+|  1   |     >24h | 318801 |  0  |     >24h | 239909 |  0  |
+
+
 ## My Leaderboard (2022)
 |      |  Part 1  |        |     |  Part 2  |        |     |
 | :---:|----------|--------|:---:|----------|--------|:---:|
@@ -17,6 +24,14 @@ My solutions will be completed in Javascript as much as I can. Due to my career 
 |  5   | 01:18:57 |  13922 |  0  | 01:25:25 |  13251 |  0  |
 |  6   | 00:11:57 |   7480 |  0  | 00:15:30 |   7646 |  0  |
 |  7   |     >24h | 116387 |  0  | 00:15:30 | 113762 |  0  |
+
+
+## My Leaderboard (2015)
+|      |  Part 1  |        |     |  Part 2  |        |     |
+| :---:|----------|--------|:---:|----------|--------|:---:|
+|  Day |   Time   |  Rank  |Score|   Time   |  Rank  |Score|
+|  1   |     >24h |  85283 |  0  |     >24h |  69785 |  0  |
+|  2   |     >24h |  54552 |  0  |     >24h |  49184 |  0  |
 
 
 ## Setup & Execution
