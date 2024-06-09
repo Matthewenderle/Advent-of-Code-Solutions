@@ -11,6 +11,7 @@ My solutions will be completed in Javascript as much as I can. Due to my career 
 | :---:|----------|--------|:---:|----------|--------|:---:|
 |  Day |   Time   |  Rank  |Score|   Time   |  Rank  |Score|
 |  1   |     >24h | 318801 |  0  |     >24h | 239909 |  0  |
+|  2   |     >24h | 214270 |  0  |     >24h | 204193 |  0  |
 
 
 ## My Leaderboard (2022)
